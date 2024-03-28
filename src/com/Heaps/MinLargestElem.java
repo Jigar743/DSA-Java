@@ -20,13 +20,11 @@ public class MinLargestElem {
     }
 
     public static void main(String[] args) {
-        MinLargestElem m = new MinLargestElem();
-
         int[] arr = {5, 1, 4, 2};
-        System.out.println(m.solve(arr, 3));
+        System.out.println(solve(arr, 3));
     }
 
-    public int solve(int[] A, int B){
+    public static int solve(int[] A, int B){
         int n = A.length;
         int[] cloneArr = new int[n];
         System.arraycopy(A, 0, cloneArr, 0, n);

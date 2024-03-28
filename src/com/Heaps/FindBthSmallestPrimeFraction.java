@@ -6,10 +6,9 @@ import java.util.Comparator;
 
 public class FindBthSmallestPrimeFraction {
     public static void main(String[] args) {
-        FindBthSmallestPrimeFraction f1 = new FindBthSmallestPrimeFraction();
         int[] arr = {1, 2, 3, 5};
 
-        System.out.println(Arrays.toString(f1.solve(arr, 3)));
+        System.out.println(Arrays.toString(solve(arr, 3)));
     }
 
     public static class Pair {
@@ -30,7 +29,7 @@ public class FindBthSmallestPrimeFraction {
         }
     }
 
-    public int[] solve(int[] A, int B) {
+    public static int[] solve(int[] A, int B) {
         int n = A.length;
         ArrayList<Pair> fractions = new ArrayList<>();
 

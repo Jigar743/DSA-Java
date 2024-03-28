@@ -16,16 +16,16 @@ public class AthLargestElement {
 
         PriorityQueue<Integer> numbers = new PriorityQueue<>();
 
-        for(int i = 0; i < A-1; i++){
+        for (int i = 0; i < A - 1; i++) {
             ans[i] = -1;
             numbers.add(B[i]);
         }
 
         numbers.add(B[A-1]);
-        ans[A-1] = numbers.peek();
+        ans[A - 1] = numbers.peek();
 
-        for(int i = A; i< n; i++){
-            if(B[i] > numbers.peek()){
+        for (int i = A; i < n; i++) {
+            if (B[i] > numbers.peek()) {
                 numbers.remove();
                 numbers.add(B[i]);
             }

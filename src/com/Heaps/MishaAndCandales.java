@@ -4,12 +4,11 @@ import java.util.PriorityQueue;
 
 public class MishaAndCandales {
     public static void main(String[] args) {
-        MishaAndCandales m1 = new MishaAndCandales();
         int[] arr = {3, 2, 3};
-        System.out.println(m1.solve(arr, 4));
+        System.out.println(solve(arr, 4));
     }
 
-    public int solve(int[] A, int B) {
+    public static int solve(int[] A, int B) {
         PriorityQueue<Integer> q = new PriorityQueue<>();
 
         for (int val : A) {
