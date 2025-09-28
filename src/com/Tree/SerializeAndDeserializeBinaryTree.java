@@ -1,7 +1,6 @@
-package com.TreeBased;
+package com.Tree;
 
 import java.util.LinkedList;
-import java.util.Objects;
 import java.util.Queue;
 
 public class SerializeAndDeserializeBinaryTree {

@@ -1,4 +1,4 @@
-package com.TreeBased;
+package com.Tree;
 
 public class TreeNode {
     int val;

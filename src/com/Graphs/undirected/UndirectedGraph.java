@@ -23,6 +23,11 @@ public class UndirectedGraph {
     public void printGraph() {
         for(int i = 0; i< this.V; i++) {
             System.out.print(i + " -> ");
+            if(adjList.get(i).isEmpty()) {
+                System.out.print("Independent node");
+                System.out.println();
+                continue;
+            }
             for(int neighbor: adjList.get(i)) {
                 System.out.print(neighbor + " ");
             }
